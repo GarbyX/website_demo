@@ -1,0 +1,407 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> CSS assignment - positioning elements </title>
+    
+<!-- <link rel="stylesheet" href="Layout b.css"> -->
+<style>
+
+blockquote {
+   float: right;
+   position: fixed;
+   right: 10px;
+   top: 80px;
+   width: 300px;
+   height: 1200px;
+   text-align: left;
+   font-size: 250%;
+   margin: 20px;
+   padding: 20px;
+   background-color: pink;
+   color: #fff;
+}
+
+body{ 
+	width: 1366px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+	font-family: Arial, Tahoma, sans-serif ;
+	color: yellow;
+    background-color: #999;
+}
+
+#container {
+background-color: blue;
+color: #fff;
+width: 1366px;
+height: auto;
+margin-left: auto;
+margin-right; auto;
+padding: 5px;
+}
+
+#main {
+background-color: purple;
+color: #fff;
+width: 1300px;
+margin-left: auto;
+margin-right: auto; /* margin-right; auto; made it align right! Lol */
+padding: 10px;
+}
+
+.square_orange {
+float: left;
+height: 100px;
+width: 100px;
+background-color: orange;
+}
+
+.square_skyblue {
+float: left;
+height: 100px;
+width: 100px;
+background-color: lightskyblue;
+}
+
+.circle_purple {
+height: 100px;
+width: 100px;
+border-radius: 50px;
+background-color: purple;
+}
+
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            width:100%;
+            position: ;
+        }
+
+        li {
+            
+            float: left;
+            width: auto;
+            text-align: center;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            width: auto;
+        }
+
+        li a:hover {
+            background-color: #4CAE51;
+            font-weight: bold;
+            font-size: 120%;
+            text-align: center;
+            /* font-variant: small caps; */
+            text-transform: capitalize;
+            width: auto;
+        }
+
+        li a .active {
+            background-color: #4CAE51;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+table {
+border: 0px; /* 3px solid black; */
+width: 800px;
+padding: 0px;
+}
+
+td:hover {
+background-color: bisque;
+color: white;
+zoom: 120%;
+align: center;
+padding: 0px;
+}
+
+img {
+height: 200px;
+width: 200px;
+align: center;
+border: 0px;
+}
+
+p{
+width: 800px;
+text-align: justified;
+color: #fff;
+}
+
+.p1{
+position: ;
+top: 10px;
+left: 10px;
+color: #fff;
+}
+
+div #footer {
+width: 1366px;
+height: auto;
+clear: both;
+background-color: #999;
+color: #fff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<nav>
+		<ul>
+			<li> <a class="selected" href="#Index.html"> Home </a>
+			</li>
+			<li> <a href="#About.html"> About </a>
+			</li>
+
+			<li> <a href="#Projects.html"> Projects </a>
+			</li>
+
+			<li> <a href="#Register.html"> Register </a>
+			</li>
+			<li> <a href="#Contact.html"> Contact </a>
+			</li>
+		</ul>
+</nav>
+
+<div id="main">
+
+<p class="p1">
+
+This is p class example paragraph. <br><br>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+</p>
+
+<blockquote>
+<br> <br><br>
+<br><q>Turned out to be a piece of cake afterall.
+All I had to do was set the position of the damned thing!</q><br> <br>
+
+- Gabriel Madichie  <br> <br>
+
+</blockquote>
+
+<h2> This is Header 2 </h2>
+
+<p>
+This is p class examplary paragraph. <br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+</p> 
+
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<hr>
+<div class="circle_purple">
+</div>
+
+<p> 
+
+Relative is default. <br>
+Absolute (overlap but scrolls with page). <br>
+Fixed (stays on the page despite scrolling) <br><br>
+
+(normal, relative, absolute)
+
+</p>
+
+<div style="overflow-x:auto;">
+<table style="overflow-x:auto;" >
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="coding_novicevsexp.jpg"
+alt ="Novice vs Expert" 
+title ="Novice vs Expert">
+                <figcaption align="center"> Novice vs Expert </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="coding_progvsusers.jpg"
+alt ="Programmers vs Users" 
+title =" Programmers vs Users ">
+                <figcaption align="center"> Programmers vs Users </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="coding_kidfight.jpg"
+alt =" Coding Fight " 
+title =" Coding Fight ">
+                <figcaption align="center"> Coding Fight </figcaption>
+			</figure>
+		</td>
+     </tr>
+
+<!-- 2nd row starts here -->
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="coding_200lineifelse.png"
+alt ="   " 
+title =" n">
+                <figcaption align="center"> if-else statement overload </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="coding_ifstatementAI.jpg"
+alt ="   " 
+title =" n">
+                <figcaption align="center"> if-else statement AI </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="weird.gif"
+alt ="   " 
+title =" n">
+                <figcaption align="center"> Turnt Couple </figcaption>
+			</figure>
+		</td>
+    </tr>
+
+<!-- 3rd row starts here -->
+
+      <tr>
+		<td> 
+			<figure>
+				<img src ="coding_evilgenius.jpg"
+alt ="   " 
+title =" n">
+                <figcaption align="center"> Evil Genius! </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="coding_dinasour.jpg"
+alt ="   " 
+title =" n">
+                <figcaption align="center"> Dinasours: Then vs Now </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="coding_progvsusers.jpg"
+alt ="Programmers vs Users" 
+title =" Programmers vs Users ">
+                <figcaption align="center"> Programmers vs Users </figcaption>
+			</figure>
+		</td>
+       <tr>
+
+</table></div>
+
+<p>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+</p> 
+
+<p> 
+
+Relative is default. <br>
+Absolute (overlap but scrolls with page). <br>
+Fixed (stays on the page despite scrolling) <br><br>
+
+(normal, relative, absolute)
+
+</p>
+
+</div>  <!-- bottom of main div-->
+
+<hr>
+
+<div id="footer">
+
+&copy; Gabriel Madichie 2020
+
+<p> As always we would like to read your comments & feedbacks! </p>
+
+<form action=" " method="post">
+<fieldset>
+<legend> Subscribe to our weekly newsletter. </legend>
+<label for="email" name="Email">
+<input type="email" id=" " value="" required="required" placeholder="Enter your email address"><label>
+<br>
+<input type="submit" value="Subscribe">
+</fieldset>
+</form>
+
+</div>
+
+</div> <!-- bottom of cont div -->
+
+</body>
+
+</html>

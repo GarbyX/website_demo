@@ -1,0 +1,737 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Life in the Suburbs </title>
+    
+<!-- <link rel="stylesheet" href="Layout f.css"> -->
+<style>
+
+.ad {
+   float: right;
+   position: fixed;
+   right: 0px;
+   top: 40px;
+   width: 300px;
+   height: 490px;
+   text-align: left;
+   font-size: 200%;
+   margin: 40px;
+   padding: 20px;
+   background-color: pink;
+   color: #fff;
+}
+
+img.ad2 {
+   float: right;
+   position: fixed;
+   right: 0px;
+   top: 40px;
+   width: 300px;
+   height: 462px;
+   margin: 40px;
+   padding: 20px;
+}
+
+body{ 
+	font-family: Arial, Tahoma, sans-serif ;
+	color: #fff;
+    background-color: #999;    
+}
+
+#container {
+background-color: blue;
+color: #fff;
+width: 1300px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+}
+
+#main {
+background-color: purple;
+color: #fff;
+width: 1260px;
+margin-left: auto;
+margin-right: auto; 
+/* margin-right; auto; made it align right! Lol */
+padding: 20px;
+}
+
+.square_orange {
+float: left;
+height: 100px;
+width: 100px;
+background-color: orange;
+}
+
+.square_skyblue {
+float: left;
+height: 100px;
+width: 100px;
+background-color: lightskyblue;
+}
+
+.circle_purple {
+height: 100px;
+width: 100px;
+border-radius: 50px;
+background-color: purple;
+}
+
+    nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            width:100%;
+            position: static;
+        }
+
+        nav li {
+            display: inline;
+            background-color: #000;
+            color: white;
+            float: left;
+            padding: 15px 15px;
+            width: auto;
+            text-align: center;
+            
+        }
+
+        nav li a {
+            color: yellow;
+            text-decoration: none;
+            width: 50px;
+        }
+
+       li a:hover {
+            background-color: #4CAE51;
+            color: yellow;
+            font-weight: bold;
+            font-size: 120%;
+            text-align: center;
+            text-decoration: underline;
+            font-variant: small-caps;
+            /* text-transform: capitalize;*/
+            width: 60px;
+            padding: 15px 15px;
+        }
+
+       li a .active {
+            background-color: #c0c0c0; /* #4CAE51; */
+            font-weight: bold;      
+            color: red;
+        }
+
+#searchbox {
+float: right;
+}
+
+h1 {
+color: lightskyblue;
+font-style: italic;
+}
+
+table {
+border: 0px; /* 3px solid black; */
+width: 800px;
+padding: 0px;
+}
+
+td:hover {
+background-color: bisque;
+color: maroon;
+zoom: 120%;
+align: center;
+padding: 1px;
+}
+
+img {
+height: 200px;
+width: 200px;
+align: center;
+border: 0px;
+}
+
+img.mtn {
+height: 200px;
+width: 200px;
+align: center;
+border: 1px solid blue;
+}
+
+
+a:link {
+   color: yellow;
+}
+
+a:visited {
+   color: yellow;
+}
+a:hover {
+   font-size: 150%;
+   color: lemon;
+}
+a:active {
+   color: gray;
+}
+
+p, p1, p2, p3, p4, p5, p6 {
+width: 800px;
+text-align: justified;
+color: #fff;
+}
+
+div #footer {
+width: 1300px;
+height: 50px;
+clear: both;
+background-color: #999;
+color: #fff;
+padding: 20px;
+}
+
+div.footer {
+width: 300px;
+height: 100px;
+background-color: #999;
+color: cyan;
+border-style: solid;
+border-radius: 15px 40px;
+padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- -----------------------------Start of body -------------------------------------------  -->
+
+<div id="container">
+
+<div>
+<nav>
+		<ul>
+			<li> <a class="active" href="#Index.html"> Home </a>
+			</li>
+			<li> <a href="#About.html"> About </a>
+			</li>
+
+			<li> <a href="#Projects.html"> Projects </a>
+			</li>
+
+			<li> <a href="#Register.html"> Register </a>
+			</li>
+			<li> <a href="#Contact.html"> Contact </a>
+			</li>
+            <li>
+<div id="searchbox">
+<input type="search" id="usersearch" name="searchitem"> Search
+</div>
+           </li>
+		</ul>
+</nav>
+</div>
+
+<div id="main">
+
+<p class="p1">
+<h1> This is an interesting story ...  </h1>
+... so please make sure you read it to the end.
+</p>
+			<figure>
+				<img class="ad2" src ="gifs/3d galaxy_stairway.gif"
+alt ="3d galaxy_stairway" 
+title ="World of Mysteries">
+                <figcaption align="center"> &nbsp </figcaption>
+			</figure>
+
+<!-- 
+<div class="ad">
+<br> <br><q>Turned out to be a piece of cake afterall.
+All I had to do was set the position of the damned thing!</q><br><br><br>
+
+- Gabriel Madichie <sup>®</sup> <br><br>
+
+</div>
+-->
+
+<h1 id = "C1"> Life in the suburbs </h1>
+
+<h2> Chapter 1 </h2>
+
+<p id = "p1">
+Alice got up in the morning like she always does after snoozing her alarm. It was only a few days ago she decided to join her friends for an upcoming <i>gig</i> 
+in town and the event was fast approaching.  Alice said to herself <q><cite>Hmmm, indeed the best things in life are free </cite></q> in satirical reference to 
+a popular quote by Coco Chanel, leaving out the later part - most people often do.
+<q>So where are we meeting today?</q> she asked Tina her best friend over the phone. She paused and said <q>uh-huh, alright cool</q>. 
+Kunle and Tayo were very close childhood friends who loved to play basketball and rap music. It was no surprise that when Tayo decided to get his hair braided, 
+Kunle followed suit. Many people often mistook them for twins due to their uncanny resemblance. Mark was also their close friend but they only met a couple of years back. 
+<q>Hey Mark, why don't you convert this your afro hair-do to dreadlocks?</q>Mark was tired of hearing this suggestion all the time and always replied with his trademark <q> In your dreams, Migos</q>.</p> <br><br><br>
+
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<div class="square_orange">
+</div>
+<br>
+<div class="square_skyblue">
+</div>
+<br>
+<hr>
+<div class="circle_purple">
+</div>
+
+Relative is default. <br>
+Absolute (overlap but scrolls with page). <br>
+Fixed (stays on the page despite scrolling) <br><br>
+
+<p id = "p2">
+The Tribeca was a very popular part of town known for years as the defacto meeting point for sharing of ideas as hosted by Tony. A very simple looking guy with a calm demeanour. Rumours were rife that he had been involved in a lot of shady business while studying abroad but he usually dismissed those as mere <q>slanderous allegations</q> much to his chagrin.
+<q>Sup Ladies</q> he said as he drove into the venue. Everyone was excited to see him and were all smiles - except Cynthia. <q>You're late, Tony</q> she said with a frown. <q>Come on, Cynthia, cut me some slack. You know I've got a lot to juggle these days</q> he replied. She told him he has to show more commitment to their plans or risk being replaced. <q>As in evicted? You serious? Babe relax, I'm here aren't I. Let's get straight to business now. Shall we?</q> At this point the situation was becoming quite tense.
+<q>Guys please it's okay. Both of you are just raising the temperature here and we haven't even done much preparations so far. Both of you should just chill right now before I get upset</q> said Tina with her tiny little voice. Everyone bursted out in laughter, including Tina. She was always a good pacifist but her tiny little voice made whatever she said sound funny whether she was serious or not. <q>Ah nice, world war three has just been averted again </q> said Kelechi.
+Meanwhile, Mary had been waiting patiently for Cynthia and Tony to <q>cease fire</q> so that she can continue where she left off. It was a meeting of a dozen young people who grew up in the area and had taken it upon themselves to bring to the attention of all and sundry how much they were being negatively affected by the hard times lately. They decided to organise this gig and get young folks too like them all over town to hang out, have fun and discuss the 'way forward'.
+
+<div>
+    <table>
+    
+        <tr class="odd">
+            <td> 
+                <figure>
+                    <img src ="coding_novicevsexp.jpg"
+    alt ="Novice vs Expert" 
+    title ="Novice vs Expert">
+                    <figcaption align="center"> Novice vs Expert </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="coding_progvsusers.jpg"
+    alt ="Programmers vs Users" 
+    title =" Programmers vs Users ">
+                    <figcaption align="center"> Programmers vs Users </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="coding_kidfight.jpg"
+    alt =" Coding Fight " 
+    title =" Coding Fight ">
+                    <figcaption align="center"> Coding Fight </figcaption>
+                </figure>
+            </td>
+         </tr>
+    
+    <!-- 2nd row starts here -->
+    
+        <tr class="odd">
+            <td> 
+                <figure>
+                    <img src ="coding_200lineifelse.png"
+    alt ="   " 
+    title =" n">
+                    <figcaption align="center"> if-else statement overload </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="coding_ifstatementAI.jpg"
+    alt ="   " 
+    title =" n">
+                    <figcaption align="center"> if-else statement AI </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="gifs/Family_guy_CSS.gif "
+    alt =" Family_guy_CSS " 
+    title ="Family Guy sitcom CSS">
+                    <figcaption align="center"> CSS feels like this </figcaption>
+                </figure>
+            </td>
+        </tr>
+    
+    <!-- 3rd row starts here -->
+    
+          <tr>
+            <td> 
+                <figure>
+                    <img src ="coding_evilgenius.jpg"
+    alt ="   " 
+    title =" n">
+                    <figcaption align="center"> Evil Genius! </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="coding_dinasour.jpg"
+    alt ="   " 
+    title =" n">
+                    <figcaption align="center"> Dinasours: Then vs Now </figcaption>
+                </figure>
+            </td>
+    
+            <td> 
+                <figure>
+                    <img src ="coding_progvsusers.jpg"
+    alt ="Programmers vs Users" 
+    title =" Programmers vs Users ">
+                    <figcaption align="center"> Programmers vs Users </figcaption>
+                </figure>
+            </td>
+           <tr>
+    
+    </table></div>
+
+<p id = "p3">
+
+"Okay everyone please settle down so we can make some more progress" said Mary. She was arguably the 'Queen Bee' of the group and was loved by everyone. She happened to be a 
+very humble lady despite her background which endeared her to many.Her mum is a Medical Doctor while her dad is a Reservoir Engineer 
+at <abbr title="Shell Petroleum Development Company">SPDC</abbr>, a Multinational Oil Company. 
+Her Mum also works with several health organisations that collaborate with the <abbr title="World Health Organization">WHO</abbr>. In many circles around the town she was 
+simply known as <abbr title="Doctor">Dr.</abbr> Ejiro's  daughter. An identity she initially resented. When she said "more progress" everyone knew what she meant. 
+They knew her to be an achiever despite her modesty and even though they still had a lot to put together for the gig they had accomplished quite a lot despite all the 
+difficulties attached to living in a Country like Nigeria - lack of funtional ammenities, inadequate power supply, bad roads, insecurity and a whole lot more.
+Many of them had bills to pay, personal targets to meet, academic goals to achieve, family issues, pressing needs, life aspirations, pending ambitions and all
+ what not but still remained resilient. It was also what made them all the more determined to create and manage this upcoming gig - and succeed they must.
+  The itinerary for the event had detailed quite a lot of activities lined up and there was no going back.
+
+Mary now turned to Alice and asked her to bring the Team up to speed with all they had purchased so far and if there was anything outstanding. 
+Alice quickly went to Cynthia's car to get a checklist, then came on stage amidst rounds of applause and thanked everyone for their support but reminded them how they still had to purchase more <del> drinks</del> <ins> food.</ins>
+
+To be continued.
+
+</p>
+
+<ul>
+<li>
+<a href = "#C1" > Go to top </a>
+</li>
+<li>
+<a href = "#p1"> 1st paragraph </a>
+</li>
+<li>
+<a href = "#p2"> 2nd paragraph </a>
+</li>
+<li>
+<a href = "#p3">3rd paragraph </a>
+</li>
+
+<li>
+<a href = "#.html"> Chapter 2 </a>
+</li>
+
+</ul>
+
+<div>
+<table>
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="gifs/3d galaxy_stairway.gif"
+alt ="3d galaxy_stairway" 
+title ="3d galaxy_stairway">
+                <figcaption align="center"> Mystery </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="gifs/3d_Hurricane.gif"
+alt ="3d Hurricane" 
+title ="3d Hurricane">
+                <figcaption align="center"> Hurricane </figcaption>
+			</figure>
+		</td>
+
+        <td> 
+            <figure>
+                <img src ="gifs/Pheonix E0P.gif"
+    alt ="Pheonix Lady aflame" 
+    title ="Pheonix Lady &reg">
+                <figcaption align="center"> Pheonix alive </figcaption>
+            </figure>
+        </td>
+
+<!-- 2nd row starts here -->
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="gifs/Audemars Piguet.gif"
+alt ="Audemars Piguet ® "
+title ="Audemars Piguet ®">
+                <figcaption align="center">  Audemars Piguet <sup>&reg</sup> </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="gifs/Vacheron Constantin.gif"
+alt =" Vacheron Constantin ©"
+title =" Vacheron Constantin ©">
+                <figcaption align="center"> Vacheron Constantin </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="gifs/rolex.gif"
+alt =" Breitling ®  " 
+title =" Breitling ® ">
+                <figcaption align="center"> Breitling ® </figcaption>
+			</figure>
+		</td>
+    </tr>
+
+<!-- 3rd row starts here -->
+
+      <tr>
+		<td>
+            <figure>
+				<img src ="gifs/Deus Ex.gif"
+alt =" Deus Ex - Human Evolution " 
+title ="Deus Ex - Human Evolution">
+                <figcaption align="center"> Deus Ex - Human Evo </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="gifs/Deus Ex Jdam.gif"
+alt ="Deus Ex - Adam's Quote" 
+title ="<marquee> Deus Ex - Adam Jensen's Quote </marquee>
+                <figcaption align="center"> Deus Ex - Adam's Quote </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			<figure>
+				<img src ="gifs/Deus Ex - double strike.gif"
+alt ="  Deus Ex - double strike " 
+title =" Deus Ex - double takedown ">
+                <figcaption align="center"> Deus Ex - double takedown </figcaption>
+			</figure>
+		</td>
+       <tr>
+
+<!-- 4th row starts here -->
+
+<tr>
+    <td> 
+    <figure>
+            <img src ="gifs/DMC4.gif"
+alt ="DMC4 series" 
+title ="DMC4 - Aries">
+            <figcaption align="center"> Inadvertently </figcaption>
+        </figure>
+    </td>
+
+    <td> 
+        <figure>
+            <img src ="gifs/DMC Ladies.gif"
+alt ="DMC4 Ladies" 
+title ="DMC4 - series">
+            <figcaption align="center"> Ladies making an entrance </figcaption>
+        </figure>
+    </td>
+
+    <td> 
+    <figure>
+            <img src ="gifs/DMC Dante.gif"
+alt ="DMC5: Dante" 
+title ="DMC5: Dante">
+            <figcaption align="center"> Dante </figcaption>
+        </figure>
+    </td>
+   <tr>
+
+<!-- 5th row starts here -->
+
+<tr>
+        <td> 
+            <figure>
+                <img src ="gifs/Coder Laptop.gif"
+    alt ="Coder's Laptop" 
+    title ="Coder Laptop ">
+                <figcaption align="center"> Coder Laptop </figcaption>
+            </figure>
+         </td>
+
+		<td> 
+            <figure>
+                <img src ="gifs/giphy.gif"
+    alt ="Pacific Rim Movie" 
+    title ="Intergalactic Battle - slash!">
+                <figcaption align="center"> Intergalactic Sci-fi battle </figcaption>
+            </figure>
+		</td>
+
+        <td> 
+            <figure>
+                <img src ="gifs/Xmen_Storm_Halle_Berry.gif"
+    alt ="When she catches boyfriend cheating" 
+    title ="Xmen: Storm - Halle Berry ">
+                <figcaption align="center"> When she catches you cheating </figcaption>
+            </figure>
+        </td>
+       </tr>
+
+</table></div>
+
+<h2 id = C2> Chapter 2 </h2>
+<p id = "p1">
+
+For their next meeting, Alice made an updated stock of report of the items they had purchased so far, with their respective discounted price at time of purchase for clarity and records. <p>
+
+<p id = "p2">
+
+Tony glanced through and said "We're going to need a wad of notes". To which Cynthia replied "Ugh ... you dumbass. We're not shooting a Music Video!". <br><br>
+
+"Did you just call me a dumbass?!" <br>
+"That's putting it mildly" <br> <br>
+
+Tony went bezerk. "It's such a shame you have the shameless guts to gut me when your own mess is running overdrive three years in a row" said Tony. There was dead silence. Cynthia tried to wave it off but her countenance told a different story. Yes, she was a strong independent woman but this was a bit much for her - especially as it alluded albeit subliminally to something she'd rather not talk about. Everyone was mad with Tony for going straight for her jugular. They all yelled harshly at him - with Kunle and Tayo physically restraining the other guys from clubbering him. The more he retorted the louder their various responses became. It always hurts when someone says mean things about you but it usually hurts more when they are true. To top it all, Cynthia had just barely come out of a severe depression spiral and now it seems she may have to start all over again with her therapy sessions. Even though Tony had no idea, he was not exactly going to be exonerated on mere grounds of ignorance. He had just crossed a line regardless. Though he tried to demand explanations as to why others kept silent when she insulted him but no one cared. His comeback on her was an overkill - with spikes on all edges. </p>
+
+<p id = "p3">
+
+Alice went into damage control. "Tony that's enough. Not another word from you or I bet you your reputation will sink far deeper into the mud than you can ever imagine. Cynthia are you alright?" she said.
+
+"Yeah. I'm fine. It was nothing really" replied Cynthia.
+Alice said "This meeting is over. Go home everybody."
+
+Mary said "Come here darling I'll take you home myself" as she stretched out her hands and held her firmly as they walked towards her car. She looked back at Tony and gave him a cold death stare. She didn't hate him but she never expected such words to drop from his mouth either. Tina walked up to Tony and pointed her tiny fingers to his face and said "You are not just a fool but a blissfully ignorant one!". At this point Tony dared not respond anymore. His brain basically shutdown for the rest of the day due to a lack of comprehension of what just happened. Moments later everywhere was deserted. Tony further felt the impact of his actions the moment everyone left one by one and he was left alone all by himself in the empty hall. As if in solidarity, the lights went off. Tony couldn't tell if it was due to power outage or a blown fuse. He simply sighed, looked upwards and said "Et tu Brutus". He rarely puts the blame on himself even when it is very glaring. Few minutes went by - adoor opened. Tony was visibly shaken. He waa startled as he didn't remember expecting anyone at the Tribeca that time of day. 
+"You really messed up bro." Kelechi said.
+Tony said "Yeah I know. I mean for you to even talk about it makes me see how serious this is." Kelechi rarely spoke. He's the most observant person Tony ever met. 
+"You need to apologise to her in 'slow motion' ". 
+Tony looked at him with his eyes wide open - a mixture of surprise and confusion. "You heard me" said Kelechi then left. </p>
+
+<blockquote>
+   <img src ="gifs/MTN ng ad.gif"
+    alt =" MTN Nigeria commercial" 
+    title =" MTN Nigeria banner" class="mtn"> <br><br>
+           
+</blockquote>
+
+<p id = "p4">
+Cynthia and the Ladies got together at her apartment. "Mummy!" screamed a little girl.
+"Awww my love, how I've missed you". 
+She lifted her up, kissed her and embraced her.
+"Come on in everyone" she said.
+Alice, Mary and Tina stepped in and made themselves comfortable in her living room. Tina grabbed the remote and switched to her favourite channel. Alice was more concerned about Cynthia's overall well being. Mary was strategically waiting for the right time to bring up the "Tony incident" so they can trash it once and for all. They had discussed about it while on the road but just in bits. "This guy is a perfect gentlemen!" Tina said as her favourite actor came on screen. Mary knew this was her cue. <br> <br>
+
+"An exact opposite of Tony" she said <br>
+"I'm telling you!" said Tina <br>
+"They just don't make guys like this anymore" said Alice <br>
+"Yes indeed, pity really" said Mary "if we had more gentlemen in this world like half of the world's problems would be solved" <br>
+"Girls you know what irked me?" said Cynthia, "him refering to an older incident like it's his business". <br>
+"Like he even knows the details" said Alice " his own past isn't exactly squeaky clean". <br><br>
+
+The Ladies talked and talked till they got tired and started talking about other topics of interest till it was time to call it a day. 
+</p>
+
+<p id="p5">
+Tony's shame multiplied in leaps and bounds after that day. He called Cynthia severally but she did not pick his calls. He started drinking - his only way of dealing with recurring problems in life. Few days later he sobered up. He now decided to call Alice. <br><br>
+
+"Tony what do you want from me?" <br>
+"I'm sorry." <br>
+"Take you apology to Cynthia please. I'm not your messenger!" <br>
+"But she won't take my calls. Please help me out here" <br>
+"You really called her?" <br>
+"Yes I did. I don't know what else to do." </p><br>
+
+<ul>
+<li>
+<a href = "#C2" > Go to top </a>
+</li>
+<li>
+<a href = "#p1"> 1st paragraph </a>
+</li>
+<li>
+<a href = "#p2"> 2nd paragraph </a>
+</li>
+<li>
+<a href = "#p3">3rd paragraph </a>
+</li>
+
+<li>
+<a href = "# .html"> Style 1 </a>
+</li>
+
+<li>
+<a href = "# 2.html"> Style 2</a>
+</li>
+
+</ul>
+
+<hr>
+
+</div>  <!-- bottom of main div-->
+
+<div id="footer">
+
+	<figure>
+				<img src ="gifs/angry coder.gif"
+alt =" Coding Fight " 
+title =" Coding Fight ">
+                <figcaption align="left"> Coding Fight </figcaption>
+			</figure>
+
+<p> As always we would like to read your comments & suggestions! Hopefully not like the guy above :-)  </p>
+
+<div class="footer">
+<form action=" " method="post">
+<fieldset>
+<legend> Subscribe to our weekly newsletter. </legend>
+<label for="email" name="Email">
+<input type="email" id=" " value="" required="required" placeholder="Enter your email address"><label>
+<br>
+<input type="submit" value="Subscribe">
+</fieldset>
+</form>
+<br><br><br>
+</div>
+
+<br>
+
+<hr>
+
+&copy; Gabriel Madichie 2020 
+<br> <br> <br> <br>
+
+</div> <!-- bottom of div id="footer" -->
+
+</div> <!-- bottom of cont div --><br> <br> <br> <br>
+
+</body>
+
+</html>

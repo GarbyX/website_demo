@@ -1,0 +1,161 @@
+
+#ad {
+float: right;
+width: 300px;
+height: 300px;
+font-size: 200%;
+margin: 20px;
+padding: 10px;
+background-color: lightskyblue;
+color: #fff;
+}
+
+blockquote {
+   float: right;
+   width: 300px;
+   height: 1200px;
+   text-align: left;
+   font-size: 250%;
+   margin: 20px;
+   padding: 10px;
+   background-color: olive;
+   color: #fff;
+   position: fixed;
+   top: 600px;
+}
+
+body{ 
+	width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+	font-family: Arial, Tahoma, sans-serif ;
+	color: #665544;
+    /* 
+    background-image: url("photo.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover; 
+     */
+    background-color: pink;
+}
+
+#container {
+background-color: green;  /* cyan; */
+width: 1366px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+}
+
+#main {
+background-color: cyan;
+width: 1000px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+}
+
+.square_orange {
+float: left;
+height: 100px;
+width: 100px;
+background-color: orange;
+}
+
+.square_skyblue {
+float: left;
+height: 100px;
+width: 100px;
+background-color: lightskyblue;
+}
+
+.circle_purple {
+height: 100px;
+width: 100px;
+border-radius: 50px;
+background-color: purple;
+}
+
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            width:100%;
+            position: ;
+        }
+
+        li {
+            
+            float: left;
+            width: auto;
+            text-align: center;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            width: auto;
+        }
+
+        li a:hover {
+            background-color: #4CAE51;
+            font-weight: bold;
+            font-size: 120%;
+            text-align: center;
+            /* font-variant: small caps; */
+            text-transform: capitalize;
+            width: auto;
+        }
+
+        li a .active {
+            background-color: #4CAE51;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+table {
+border: 0px; /* 3px solid black; */
+width: 800px;
+padding: 0px;
+}
+
+td:hover {
+background-color: bisque;
+color: white;
+zoom: 120%;
+align: center;
+padding: 0px;
+}
+
+img {
+height: 200px;
+width: 200px;
+align: center;
+border: 0px;
+}
+
+p{
+width: 800px;
+text-align: justified;
+}
+
+.p1{
+position: ;
+top: 10px;
+left: 10px;
+color: olive;
+}
+
+div #footer {
+width: 1366px;
+height: auto;
+clear: both;
+background-color: #999;
+color: #fff;
+}

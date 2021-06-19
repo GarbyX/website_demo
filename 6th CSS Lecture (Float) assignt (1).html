@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> CSS assignment - positioning elements </title>
+    
+<!-- <link rel="stylesheet" href="Styles/layout 3.css" > -->
+
+<style>
+
+#ad {
+float: right;
+width: 275px;
+height: 300px;
+font-size: 150%;
+margin: 20px;
+padding: 10px;
+background-color: purple;
+color: antiquewhite; 
+}
+
+blockquote{
+    float: right;
+   width: 275px;
+ font-size: 130%;
+margin: 0px 0px 10px 10px;
+padding: 10px;
+background-color: bisque; /* antiquewhite */
+position: fixed ;
+right: 10px;
+}
+
+body{ 
+	width: 1366px;
+height: 1200px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+	color: #665544;
+	/* background-image: url("coffeeimage\4.jpg); */
+    /* background-image: url("photo.jpg"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: red;
+}
+
+#container {
+background-color: cyan;
+width: 1300px;
+width: 1200px
+margin-left: auto;
+margin-right; auto;
+padding: 20px;
+}
+
+.square_orange {
+height: 100px;
+width: 100px;
+background-color: orange;
+}
+
+.square_skyblue {
+height: 100px;
+width: 100px;
+background-color: lightskyblue;
+}
+
+.circle_purple {
+height: 100px;
+width: 100px;
+border-radius: 50px;
+background-color: purple;
+}
+
+
+/* 
+ul {
+    display: inline;
+	list-style-type: none;
+    padding: 10;
+}
+
+li a {
+  display: block;
+  width: 60px;
+}
+
+#nav .selected {
+    font-weight: bold;
+}
+
+*/
+
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            width:100%;
+            position: ;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            width: auto;
+        }
+
+        li {
+            float: left;
+            width: auto;
+            text-align: center;
+        }
+
+        li a:hover {
+            background-color: #4CAE51;
+            font-weight: bold;
+            font-variant: small caps;
+            text-transform: capitalize;
+        }
+
+        .active {
+            background-color: #4CAE51;
+            font-weight: bold;
+            font-variant: small caps;
+            text-transform: capitalize;
+        }
+
+
+#table {
+border: 3px solid black;
+width: 500px;
+}
+
+.table_head {
+background-color: #4EEE;
+}
+
+.table_head :hover {
+background-color: #4CAE51;
+}
+
+h1{
+background-color: #efefef; /*#c0c0c0*/ 
+padding: 10px;
+}
+
+h2{
+position: relative;
+top: 50px;
+left: 50px;
+padding: 10px;
+margin: 0px;
+width: 100%;
+background-color: azure;
+color: black;
+}
+
+p{
+width: 100%;
+}
+
+.example{
+position: static;
+top: 10px;
+left: 10px;
+color: olive;
+}
+
+#footer {
+width: 1366px;
+clear: both;
+background-color: #999;
+color: #fff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<nav>
+		<ul>
+			<li> <a class="selected" href="#Index.html"> Home </a>
+			</li>
+			<li> <a href="#About.html"> About </a>
+			</li>
+			<li> <a href="#Register.html"> Register </a>
+			</li>
+			<li> <a href="#Contact.html"> Contact </a>
+			</li>
+		</ul>
+</nav>
+
+<div id="ad">
+ <marquee> Advert here is floated right & is fixed. </marquee>
+</div>
+
+<p class="example">
+
+This is p class example paragraph. <br><br>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+</p>
+
+<blockquote><q>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Sunt, nobis rerum nostrum doloremque impedit sit porro. <br> Quibusdam reprehenderit, laudantium voluptates laborum doloribus <br> accusantium aliquam magnam iste sapiente cum placeat ipsa.<br>
+
+</q></blockquote>
+
+<h2> This is Header 2 </h2>
+
+<p class="example2">
+
+This is p class example 2 paragraph. <br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+</p> 
+
+<div class="square_orange">
+</div>
+
+<br>
+
+<div class="square_skyblue">
+</div>
+
+<div class="circle_purple">
+</div>
+
+
+<p> 
+
+Relative is default. <br>
+Absolute (overlap but scrolls with page). <br>
+Fixed (stays on the page despite scrolling) <br><br>
+
+(normal, relative, absolute)
+
+</p>
+
+<table>
+
+        <tr class="table_head">
+            <th> Coding 101 </th>
+            <th> Coding 102 </th>
+            <th> Coding 105 </th>
+            <th> Coding 108 </th>
+        </tr>
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="coding_novicevsexp.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> Novice vs Expert </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			 
+			<figure>
+				<img src ="coding_progvsusers.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> coding 101 </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			
+			<figure>
+				<img src ="coding_kidsfight.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> coding fun </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			
+			<figure>
+				<img src ="coding_dinasour.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> n </figcaption>
+			</figure>
+		</td>
+	</tr>
+
+<!-- 2nd row starts here -->
+
+
+	<tr class="odd">
+		<td> 
+			<figure>
+				<img src ="coding_novicevsexp.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> Novice vs Experienced Coder </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			 
+			<figure>
+				<img src ="coding_progvsusers.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> coding 101 </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			
+			<figure>
+				<img src ="coding_kidsfight.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> coding fun </figcaption>
+			</figure>
+		</td>
+
+		<td> 
+			
+			<figure>
+				<img src ="coding_dinasour.jpg" border ="1" height=100 width=100
+alt ="   " 
+title =" n">
+                <figcaption align="center"> n </figcaption>
+			</figure>
+		</td>
+	</tr>
+
+</table>
+
+<p>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis rerum nostrum doloremque impedit sit porro. Quibusdam reprehenderit, laudantium voluptates laborum doloribus accusantium aliquam magnam iste sapiente cum placeat ipsa.
+<br><br>
+
+</p> 
+
+<p> 
+
+Relative is default. <br>
+Absolute (overlap but scrolls with page). <br>
+Fixed (stays on the page despite scrolling) <br><br>
+
+(normal, relative, absolute)
+
+</p>
+
+<hr>
+
+<div id="footer">
+
+&copy; Gabriel Madichie 2020
+
+<p> We are available for your feedbacks and comments! </p>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
